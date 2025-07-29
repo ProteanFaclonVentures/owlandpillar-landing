@@ -1,0 +1,528 @@
+---
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Owl and Pillar - AI-Powered College Matching</title>
+    <meta name="description" content="Find your perfect college match with AI. Discover reach, target, and safety schools tailored to your profile." />
+    
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav>
+        <div class="container">
+          <div class="logo">
+            <span class="owl">Owl</span> <span class="and">&</span> <span class="pillar">Pillar</span>
+          </div>
+          <div class="beta-badge">BETA</div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <h1>Find Your Perfect College Match with AI</h1>
+        <p class="subtitle">
+          Our intelligent algorithm analyzes your profile to identify reach, target, 
+          and safety schools that align with your academic goals and aspirations.
+        </p>
+        <form class="signup-form" action="#" method="POST">
+          <label for="email" class="sr-only">Email address</label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="Enter your email for early access" 
+            required
+            aria-label="Email address"
+          />
+          <button type="submit">Start Free Trial</button>
+        </form>
+        <p class="form-note">No credit card required • 14-day free trial</p>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <div class="container">
+        <h2>How It Works</h2>
+        <div class="features-grid">
+          <div class="feature">
+            <div class="feature-icon">🎯</div>
+            <h3>Target Schools</h3>
+            <p>Schools where your profile aligns perfectly with admitted students</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">🚀</div>
+            <h3>Reach Schools</h3>
+            <p>Ambitious choices that challenge you to excel and grow</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">🛡️</div>
+            <h3>Safety Schools</h3>
+            <p>Reliable options where admission is highly likely</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+      <div class="container">
+        <h2>Simple, Transparent Pricing</h2>
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <h3>Basic</h3>
+            <div class="price">
+              <span class="amount">$19</span>
+              <span class="period">/month</span>
+            </div>
+            <ul>
+              <li>5 college matches</li>
+              <li>Basic profile analysis</li>
+              <li>Email support</li>
+            </ul>
+            <button class="btn-secondary">Get Started</button>
+          </div>
+          <div class="pricing-card featured">
+            <div class="badge">Most Popular</div>
+            <h3>Premium</h3>
+            <div class="price">
+              <span class="amount">$39</span>
+              <span class="period">/month</span>
+            </div>
+            <ul>
+              <li>Unlimited college matches</li>
+              <li>Advanced AI analysis</li>
+              <li>Application timeline</li>
+              <li>Priority support</li>
+            </ul>
+            <button class="btn-primary">Start Free Trial</button>
+          </div>
+          <div class="pricing-card">
+            <h3>Pro</h3>
+            <div class="price">
+              <span class="amount">$79</span>
+              <span class="period">/month</span>
+            </div>
+            <ul>
+              <li>Everything in Premium</li>
+              <li>1-on-1 counseling session</li>
+              <li>Essay review</li>
+              <li>White-glove support</li>
+            </ul>
+            <button class="btn-secondary">Contact Us</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Owl and Pillar. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style>
+  /* Reset and Base Styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    /* College-inspired colors */
+    --primary-blue: #003366;
+    --primary-gold: #FFB81C;
+    --secondary-blue: #0051A5;
+    --light-gray: #F5F5F7;
+    --dark-gray: #1D1D1F;
+    --medium-gray: #6E6E73;
+    --white: #FFFFFF;
+    
+    /* Typography */
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'Inter', -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    color: var(--dark-gray);
+    background-color: var(--white);
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* Screen reader only */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  /* Header */
+  header {
+    background: var(--white);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 20px;
+  }
+
+  .logo {
+    font-family: var(--font-display);
+    font-size: 1.875rem;
+    font-weight: 700;
+  }
+
+  .logo .owl {
+    color: var(--primary-blue);
+  }
+
+  .logo .and {
+    color: var(--medium-gray);
+    font-size: 1.5rem;
+  }
+
+  .logo .pillar {
+    color: var(--primary-gold);
+  }
+
+  .beta-badge {
+    background: var(--primary-gold);
+    color: var(--primary-blue);
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+  }
+
+  /* Hero Section */
+  .hero {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, var(--light-gray) 0%, var(--white) 100%);
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    line-height: 1.2;
+    color: var(--primary-blue);
+    margin-bottom: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.25rem;
+    color: var(--medium-gray);
+    max-width: 600px;
+    margin: 0 auto 3rem;
+  }
+
+  /* Signup Form */
+  .signup-form {
+    display: flex;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .signup-form input[type="email"] {
+    flex: 1;
+    min-width: 250px;
+    padding: 1rem 1.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: var(--white);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .signup-form input[type="email"]:focus {
+    outline: none;
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 3px rgba(0, 51, 102, 0.1);
+  }
+
+  .signup-form button {
+    padding: 1rem 2rem;
+    background: var(--primary-blue);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .signup-form button:hover {
+    background: var(--secondary-blue);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 51, 102, 0.3);
+  }
+
+  .signup-form button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 51, 102, 0.3);
+  }
+
+  .form-note {
+    color: var(--medium-gray);
+    font-size: 0.875rem;
+  }
+
+  /* Features Section */
+  .features {
+    padding: 5rem 0;
+  }
+
+  .features h2 {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--primary-blue);
+    margin-bottom: 3rem;
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .feature {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 12px;
+    background: var(--light-gray);
+    transition: transform 0.3s ease;
+  }
+
+  .feature:hover {
+    transform: translateY(-4px);
+  }
+
+  .feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .feature h3 {
+    font-size: 1.5rem;
+    color: var(--primary-blue);
+    margin-bottom: 0.75rem;
+  }
+
+  .feature p {
+    color: var(--medium-gray);
+  }
+
+  /* Pricing Section */
+  .pricing {
+    padding: 5rem 0;
+    background: var(--light-gray);
+  }
+
+  .pricing h2 {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--primary-blue);
+    margin-bottom: 3rem;
+  }
+
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .pricing-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+
+  .pricing-card.featured {
+    transform: scale(1.05);
+    box-shadow: 0 8px 32px rgba(0, 51, 102, 0.15);
+  }
+
+  .pricing-card:hover {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  }
+
+  .badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary-gold);
+    color: var(--primary-blue);
+    padding: 0.25rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  .pricing-card h3 {
+    font-size: 1.5rem;
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+  }
+
+  .price {
+    margin-bottom: 2rem;
+  }
+
+  .price .amount {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+  }
+
+  .price .period {
+    color: var(--medium-gray);
+  }
+
+  .pricing-card ul {
+    list-style: none;
+    margin-bottom: 2rem;
+  }
+
+  .pricing-card li {
+    padding: 0.75rem 0;
+    color: var(--medium-gray);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .pricing-card li:last-child {
+    border-bottom: none;
+  }
+
+  /* Buttons */
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .btn-primary {
+    background: var(--primary-blue);
+    color: var(--white);
+  }
+
+  .btn-primary:hover {
+    background: var(--secondary-blue);
+    transform: translateY(-2px);
+  }
+
+  .btn-primary:focus,
+  .btn-secondary:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 51, 102, 0.3);
+  }
+
+  .btn-secondary {
+    background: transparent;
+    color: var(--primary-blue);
+    border: 2px solid var(--primary-blue);
+  }
+
+  .btn-secondary:hover {
+    background: var(--primary-blue);
+    color: var(--white);
+  }
+
+  /* Footer */
+  footer {
+    background: var(--primary-blue);
+    color: var(--white);
+    padding: 2rem 0;
+    text-align: center;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero {
+      padding: 3rem 0;
+    }
+
+    .signup-form {
+      flex-direction: column;
+    }
+
+    .signup-form input[type="email"] {
+      width: 100%;
+    }
+
+    .pricing-card.featured {
+      transform: none;
+    }
+  }
+
+  /* Focus visible for better keyboard navigation */
+  *:focus-visible {
+    outline: 3px solid var(--primary-gold);
+    outline-offset: 2px;
+  }
+
+  /* Reduced motion preferences */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+</style>
